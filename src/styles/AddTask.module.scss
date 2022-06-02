@@ -1,0 +1,103 @@
+.input{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    input{
+        padding: 10px;
+        width: 700px;
+        outline: none;
+        background-color: #f6f6f6;
+        border: 1px solid silver;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    button{
+        position: absolute;
+        right: 5px;
+        width: 50px;
+        height: 40px;
+        font-weight: bold;
+        background-color: #f6f6f6;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        font-size: 35px;
+        i{
+            transition: all .2s ;
+            color: #f3b139;
+            &:hover{
+                color: gray;
+            }
+        }
+    }
+}
+
+.Container{
+    display: flex;
+    .selectContainer{
+        text-align: start;
+        margin-top: 10px;
+        .select{
+            background-color: #dedede;
+            width: 150px;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+        }
+    }
+    
+    .errormsg{
+        background-color: orangered;
+        color: white;
+        height: 25px;
+        width: max-content;
+        margin: 9px auto;
+        margin-bottom: -10px !important;
+        padding: 7px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:720px) {
+    .input{
+        width: 500px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:530px){
+    .input{
+        width: 340px;
+        margin-top: 10px;
+        input{
+            padding: 7px;
+            font-size: 15px;
+        }
+        button{
+            bottom: 0;
+            top: 0;
+            right: 25px;
+            width: 10px;
+            height: 0px;
+            font-size: 30px;
+        }
+    }
+    
+    .Container{
+        display: flex;
+        .selectContainer{
+            .select{
+                font-size: 13px;
+                width: 130px;
+            }
+        }
+        
+        .errormsg{
+            font-size: 14px;
+        }
+    }
+}
